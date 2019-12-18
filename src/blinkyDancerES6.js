@@ -19,7 +19,7 @@
 // };
 
 
-var oldStep = makeDancer.prototype.step
+var oldStep = makeDancer.prototype.step;
 
 /////////
 
@@ -29,11 +29,11 @@ window.makeBlinkyDancer = class makeBlinkyDancer extends makeDancer {
     this.$node.addClass('blinkyDancer');
   }
 
-  step(){
+  step() {
     oldStep.call(this);
     this.$node.toggle();
   }
-}
+};
 
 
 /////////
